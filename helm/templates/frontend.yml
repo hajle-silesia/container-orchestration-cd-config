@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/hajle-silesia/frontend.git
+    repoURL: https://github.com/hajle-silesia/frontend-config.git
     targetRevision: HEAD
     path: helm
   destination:
