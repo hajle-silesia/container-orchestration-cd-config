@@ -1,12 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: file-content-converter
+  name: file-content-monitor
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/hajle-silesia/file-content-converter-config.git
+    repoURL: git@github.com:hajle-silesia/file-content-monitor.git
     targetRevision: HEAD
     path: helm
   destination:

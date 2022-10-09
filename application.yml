@@ -3,12 +3,14 @@ kind: Application
 metadata:
   name: application
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/hajle-silesia/gitops-config.git
+    repoURL: https://github.com/hajle-silesia/argocd-config.git
     targetRevision: HEAD
-    path: gitops-apps
+    path: argocd-apps
   destination:
     server: https://kubernetes.default.svc
     namespace: default
