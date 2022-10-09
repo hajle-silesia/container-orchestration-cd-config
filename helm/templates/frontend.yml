@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: file-content-processor
+  name: frontend
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: git@github.com:hajle-silesia/file-content-processor.git
+    repoURL: https://github.com/hajle-silesia/frontend.git
     targetRevision: HEAD
     path: helm
   destination:
-    server: https://kubernetes.default.svc
+    server: {{ .Values.spec.destination.server }}
     namespace: default
   syncPolicy:
     syncOptions:

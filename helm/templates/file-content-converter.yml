@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application
+  name: file-content-converter
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/hajle-silesia/argocd-config.git
+    repoURL: https://github.com/hajle-silesia/file-content-converter.git
     targetRevision: HEAD
-    path: argocd-apps
+    path: helm
   destination:
-    server: https://kubernetes.default.svc
+    server: {{ .Values.spec.destination.server }}
     namespace: default
   syncPolicy:
     syncOptions:
