@@ -3,12 +3,22 @@ entries:
   helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-04-25T19:44:52.699566532+02:00"
+    created: "2023-05-14T18:58:38.621680292+02:00"
     description: A Helm chart for Kubernetes
-    digest: 4725a06b9b7fab2e1a455e6388beac7eb994db03897a1901eedd4830489707c8
+    digest: 9b93fd68006b7b6b19bd728cc02f3707b9e6f649c4b10b5dda5cb5f53131ce03
+    name: helm
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-14T18:58:38.609795861+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c9a30c88df9a062396b0613e605b093faa5a3d73133c0eca7678c1630120e403
     name: helm
     type: application
     urls:
     - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-25T19:44:52.679663847+02:00"
+generated: "2023-05-14T18:58:38.587890364+02:00"
