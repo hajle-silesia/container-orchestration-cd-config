@@ -1,27 +1,26 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: external-secrets
+  name: gcp-workload-identity-federation-webhook
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   sources:
-    - chart: external-secrets
-      repoURL: https://charts.external-secrets.io
-      targetRevision: 0.8.3
+    - chart: gcp-workload-identity-federation-webhook
+      repoURL: https://pfnet-research.github.io/gcp-workload-identity-federation-webhook
+      targetRevision: 0.3.2
       helm:
-        releaseName: external-secrets
+        releaseName: gcp-workload-identity-federation-webhook
         valueFiles:
           - $values/helm/values.yaml
-    - repoURL: https://github.com/hajle-silesia/external-secrets-config.git
+    - repoURL: https://github.com/hajle-silesia/gcp-workload-identity-federation-webhook-config.git
       targetRevision: HEAD
-      path: helm/templates
       ref: values
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: default
+    namespace: gcp-wif-webhook-system
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

@@ -3,7 +3,17 @@ entries:
   helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T22:36:45.950686162+02:00"
+    created: "2023-09-30T19:28:19.816364463+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 55e06111de98a34d57dc81ddc968d7f865bad95c8e202973f7385150236eb15c
+    name: helm
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-30T19:28:19.803363918+02:00"
     description: A Helm chart for Kubernetes
     digest: 5f5972b24b149364339fe3d314f3adb7d9dbede939d39b1c492a7c14e5887af9
     name: helm
@@ -13,7 +23,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T22:36:45.936966029+02:00"
+    created: "2023-09-30T19:28:19.790027052+02:00"
     description: A Helm chart for Kubernetes
     digest: 40c280fa046eeb9e0b5233f3a30190b115ca241828767c9b942d72bbca2c5bf4
     name: helm
@@ -23,7 +33,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T22:36:45.921946162+02:00"
+    created: "2023-09-30T19:28:19.777239493+02:00"
     description: A Helm chart for Kubernetes
     digest: d4a23c09aa4ec4ae4e75be22306acf31a333c8f40c986df3166f0ec555410acc
     name: helm
@@ -33,7 +43,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T22:36:45.907163367+02:00"
+    created: "2023-09-30T19:28:19.764226384+02:00"
     description: A Helm chart for Kubernetes
     digest: 9b93fd68006b7b6b19bd728cc02f3707b9e6f649c4b10b5dda5cb5f53131ce03
     name: helm
@@ -43,7 +53,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T22:36:45.892390461+02:00"
+    created: "2023-09-30T19:28:19.751553804+02:00"
     description: A Helm chart for Kubernetes
     digest: c9a30c88df9a062396b0613e605b093faa5a3d73133c0eca7678c1630120e403
     name: helm
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-31T22:36:45.874930776+02:00"
+generated: "2023-09-30T19:28:19.73702032+02:00"
