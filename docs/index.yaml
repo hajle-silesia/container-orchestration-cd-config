@@ -9,7 +9,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.7.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
@@ -19,7 +19,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.6.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
@@ -29,7 +29,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.5.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
@@ -39,7 +39,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.4.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
@@ -49,7 +49,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.3.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
@@ -59,7 +59,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.2.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
@@ -69,7 +69,7 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.1.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
@@ -79,6 +79,6 @@ entries:
     name: helm
     type: application
     urls:
-    - https://raw.githubusercontent.com/hajle-silesia/cd-config/master/docs/helm-0.1.0.tgz
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.0.tgz
     version: 0.1.0
 generated: "2024-11-21T18:59:12.862007751Z"
