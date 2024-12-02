@@ -3,7 +3,16 @@ entries:
   helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-21T21:29:38.441051322Z"
+    created: "2024-12-02T10:12:19.087953889Z"
+    description: A Helm chart for Kubernetes
+    digest: 8743f404a69e7d8ae9853e074344f0160c082432a2c1791c4f568e38d1da8851
+    name: helm
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: 1.16.0
     description: A Helm chart for Kubernetes
     digest: 5f76bab1a716889f1a25b457333d02f0017fd2703cebc0ac2d3006dfb97ca628
     name: helm
@@ -81,4 +90,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-21T21:29:38.436333057Z"
+generated: "2024-12-02T10:12:19.085541367Z"
