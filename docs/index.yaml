@@ -3,7 +3,17 @@ entries:
   helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.643893887Z"
+    created: "2024-12-16T19:23:56.002153318Z"
+    description: A Helm chart for Kubernetes
+    digest: 33ed31758d144c9b536efd509ce0c94aea97e9450ed2e10eed9ae3ff804fb2e4
+    name: helm
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-12-16T19:23:56.001891611Z"
     description: A Helm chart for Kubernetes
     digest: 3e7ceb0ca90ebdae85a5a7e0114d5833bd1b328f9c521b7e66fb17eded5545c6
     name: helm
@@ -13,7 +23,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.646426542Z"
+    created: "2024-12-16T19:23:56.00617196Z"
     description: A Helm chart for Kubernetes
     digest: 38058f0f0a70ee20fe0626b28a770f52fc2755033a72e77a1521926b080c5d36
     name: helm
@@ -23,7 +33,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.646149198Z"
+    created: "2024-12-16T19:23:56.005666817Z"
     description: A Helm chart for Kubernetes
     digest: 8743f404a69e7d8ae9853e074344f0160c082432a2c1791c4f568e38d1da8851
     name: helm
@@ -33,7 +43,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.645896241Z"
+    created: "2024-12-16T19:23:56.005223218Z"
     description: A Helm chart for Kubernetes
     digest: 5f76bab1a716889f1a25b457333d02f0017fd2703cebc0ac2d3006dfb97ca628
     name: helm
@@ -43,7 +53,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.645530008Z"
+    created: "2024-12-16T19:23:56.004732297Z"
     description: A Helm chart for Kubernetes
     digest: 2cc4ce95e21c271c7ce4577ecc1eca0348242e8bded76c9b9328a855a693c38f
     name: helm
@@ -53,7 +63,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.645277897Z"
+    created: "2024-12-16T19:23:56.004225994Z"
     description: A Helm chart for Kubernetes
     digest: 55e06111de98a34d57dc81ddc968d7f865bad95c8e202973f7385150236eb15c
     name: helm
@@ -63,7 +73,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.644944312Z"
+    created: "2024-12-16T19:23:56.003684997Z"
     description: A Helm chart for Kubernetes
     digest: 5f5972b24b149364339fe3d314f3adb7d9dbede939d39b1c492a7c14e5887af9
     name: helm
@@ -73,7 +83,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.644595793Z"
+    created: "2024-12-16T19:23:56.00320085Z"
     description: A Helm chart for Kubernetes
     digest: 40c280fa046eeb9e0b5233f3a30190b115ca241828767c9b942d72bbca2c5bf4
     name: helm
@@ -83,7 +93,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.644168043Z"
+    created: "2024-12-16T19:23:56.002697706Z"
     description: A Helm chart for Kubernetes
     digest: d4a23c09aa4ec4ae4e75be22306acf31a333c8f40c986df3166f0ec555410acc
     name: helm
@@ -93,7 +103,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.643532106Z"
+    created: "2024-12-16T19:23:56.001327782Z"
     description: A Helm chart for Kubernetes
     digest: 9b93fd68006b7b6b19bd728cc02f3707b9e6f649c4b10b5dda5cb5f53131ce03
     name: helm
@@ -103,7 +113,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-03T14:48:50.64310576Z"
+    created: "2024-12-16T19:23:56.000674006Z"
     description: A Helm chart for Kubernetes
     digest: c9a30c88df9a062396b0613e605b093faa5a3d73133c0eca7678c1630120e403
     name: helm
@@ -111,4 +121,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/hajle-silesia/container-orchestration-cd-config/master/docs/helm-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-03T14:48:50.64257657Z"
+generated: "2024-12-16T19:23:55.998480788Z"
