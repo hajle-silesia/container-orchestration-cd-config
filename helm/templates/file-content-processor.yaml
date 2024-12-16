@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/hajle-silesia/file-content-processor-config.git
+    repoURL: registry-1.docker.io/hajlesilesia
     targetRevision: HEAD
-    path: helm
+    chart: file-content-processor-config
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: default
