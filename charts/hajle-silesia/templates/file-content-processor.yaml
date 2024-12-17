@@ -7,10 +7,10 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
-    repoURL: registry-1.docker.io/hajlesilesia
-    targetRevision: HEAD
-    chart: file-content-processor-config
+  sources:
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 2.0.2
+      chart: file-content-processor-config
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: default
