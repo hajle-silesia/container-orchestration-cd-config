@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: registry-1.docker.io/
-      targetRevision: 2.0.5
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 2.0.6
       chart: file-content-processor-config
   destination:
     server:
