@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: file-content-ui
+  name: file-content-converter
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
-    repoURL: https://github.com/hajle-silesia/file-content-ui-config.git
-    targetRevision: HEAD
-    path: helm
+  sources:
+    - repoURL: https://github.com/hajle-silesia/file-content-converter-config.git
+      targetRevision: HEAD
+      path: helm
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: default

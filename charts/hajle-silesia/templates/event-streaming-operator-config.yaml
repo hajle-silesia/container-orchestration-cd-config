@@ -1,19 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: file-content-monitor
+  name: strimzi-kafka-operator
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
-    repoURL: https://github.com/hajle-silesia/file-content-monitor-config.git
-    targetRevision: HEAD
-    path: helm
+  sources:
+    - chart: strimzi-kafka-operator
+      repoURL: https://strimzi.io/charts/
+      targetRevision: 0.32.0
+      helm:
+        releaseName: strimzi
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: default
+    namespace: event-streaming
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
