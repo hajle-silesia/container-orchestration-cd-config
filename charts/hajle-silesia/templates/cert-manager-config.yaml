@@ -1,19 +1,24 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: event-streaming
+  name: cert-manager
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
-    repoURL: https://github.com/hajle-silesia/event-streaming-config.git
-    targetRevision: HEAD
-    path: helm
+  sources:
+    - chart: cert-manager
+      repoURL: https://charts.jetstack.io
+      targetRevision: v1.13.1
+      helm:
+        releaseName: cert-manager
+        parameters:
+          - name: installCRDs
+            value: "true"
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: event-streaming
+    namespace: cert-manager
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

@@ -7,10 +7,10 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
-    repoURL: https://github.com/hajle-silesia/frontend-config.git
-    targetRevision: HEAD
-    path: helm
+  sources:
+    - repoURL: https://github.com/hajle-silesia/frontend-config.git
+      targetRevision: HEAD
+      path: helm
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: default
