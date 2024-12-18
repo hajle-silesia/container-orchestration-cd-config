@@ -8,6 +8,9 @@ metadata:
 spec:
   project: default
   sources:
+    - repoURL: https://github.com/hajle-silesia/video-streaming-config.git
+      targetRevision: HEAD
+      ref: values
     - chart: srs-server
       repoURL: http://helm.ossrs.io/stable
       targetRevision: 1.0.5
@@ -15,9 +18,6 @@ spec:
         releaseName: srs-server
         valueFiles:
           - $values/helm/values.yaml
-    - repoURL: https://github.com/hajle-silesia/video-streaming-config.git
-      targetRevision: HEAD
-      ref: values
   destination:
     server: "{{ .Values.spec.destination.server }}"
     namespace: default
