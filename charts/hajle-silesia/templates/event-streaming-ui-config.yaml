@@ -19,7 +19,7 @@ spec:
       targetRevision: HEAD
       ref: values
   destination:
-    server: {{ .Values.spec.destination.server }}
+    server: "{{ .Values.spec.destination.server }}"
     namespace: event-streaming
   syncPolicy:
     syncOptions:
