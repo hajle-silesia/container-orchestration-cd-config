@@ -8,11 +8,12 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/hajle-silesia/frontend-config.git
-      targetRevision: HEAD
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 1.0.0
       path: helm
+      chart: frontend-config
   destination:
-    server: "{{ .Values.spec.destination.server }}"
+    server: '{{ .Values.spec.destination.server }}'
     namespace: default
   syncPolicy:
     syncOptions:
