@@ -8,11 +8,12 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/hajle-silesia/file-content-monitor-config.git
-      targetRevision: HEAD
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 1.0.0
       path: helm
+      chart: file-content-monitor-config
   destination:
-    server: "{{ .Values.spec.destination.server }}"
+    server: '{{ .Values.spec.destination.server }}'
     namespace: default
   syncPolicy:
     syncOptions:
