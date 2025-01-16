@@ -9,7 +9,7 @@ spec:
   project: default
   sources:
     - repoURL: registry-1.docker.io/hajlesilesia
-      targetRevision: 2.0.7
+      targetRevision: 2.0.8
       chart: file-content-processor-config
   destination:
     server: '{{ .Values.spec.destination.server }}'
