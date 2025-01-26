@@ -11,11 +11,11 @@ spec:
     - repoURL: https://github.com/hajle-silesia/video-streaming-config.git
       targetRevision: HEAD
       ref: values
-    - chart: srs-server
+    - chart: oryx
       repoURL: http://helm.ossrs.io/stable
-      targetRevision: 1.0.5
+      targetRevision: 1.0.7
       helm:
-        releaseName: srs-server
+        releaseName: oryx
         valueFiles:
           - $values/helm/values.yaml
   destination:
