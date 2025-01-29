@@ -8,11 +8,11 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/hajle-silesia/video-streaming-config.git
-      targetRevision: 0.0.0
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 1.0.0
       chart: video-streaming-config
   destination:
-    server: "{{ .Values.spec.destination.server }}"
+    server: '{{ .Values.spec.destination.server }}'
     namespace: default
   syncPolicy:
     syncOptions:
