@@ -9,15 +9,8 @@ spec:
   project: default
   sources:
     - repoURL: https://github.com/hajle-silesia/video-streaming-config.git
-      targetRevision: HEAD
-      ref: values
-    - chart: oryx
-      repoURL: http://helm.ossrs.io/stable
-      targetRevision: 1.0.7
-      helm:
-        releaseName: oryx
-        valueFiles:
-          - $values/helm/values.yaml
+      targetRevision: 0.0.0
+      chart: video-streaming-config
   destination:
     server: "{{ .Values.spec.destination.server }}"
     namespace: default
