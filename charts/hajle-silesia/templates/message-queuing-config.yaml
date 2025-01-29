@@ -9,7 +9,7 @@ spec:
   project: default
   sources:
     - repoURL: registry-1.docker.io/hajlesilesia
-      targetRevision: 1.0.0
+      targetRevision: 1.0.1
       chart: message-queuing-config
   destination:
     server: '{{ .Values.spec.destination.server }}'
