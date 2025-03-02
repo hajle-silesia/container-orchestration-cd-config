@@ -8,11 +8,11 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/hajle-silesia/file-content-config.git
-      targetRevision: HEAD
-      path: helm
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 0.0.0
+      path: file-content-config
   destination:
-    server: "{{ .Values.spec.destination.server }}"
+    server: '{{ .Values.spec.destination.server }}'
     namespace: default
   syncPolicy:
     syncOptions:
