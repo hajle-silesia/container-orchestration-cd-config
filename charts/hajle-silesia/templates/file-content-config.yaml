@@ -10,7 +10,6 @@ spec:
   sources:
     - repoURL: registry-1.docker.io/hajlesilesia
       targetRevision: 1.0.0
-      path: file-content-config
       chart: file-content-config
   destination:
     server: '{{ .Values.spec.destination.server }}'
