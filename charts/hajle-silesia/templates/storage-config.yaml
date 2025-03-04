@@ -13,7 +13,7 @@ spec:
       chart: storage-config
   destination:
     server: '{{ .Values.spec.destination.server }}'
-    namespace: default
+    namespace: longhorn-system
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
