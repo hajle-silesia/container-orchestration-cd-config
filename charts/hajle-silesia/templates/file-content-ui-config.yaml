@@ -9,7 +9,7 @@ spec:
   project: default
   sources:
     - repoURL: registry-1.docker.io/hajlesilesia
-      targetRevision: 1.0.2
+      targetRevision: 1.0.5
       chart: file-content-ui-config
   destination:
     server: '{{ .Values.spec.destination.server }}'
