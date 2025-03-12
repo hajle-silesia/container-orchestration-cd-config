@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/hajle-silesia/event-streaming-config.git
-      targetRevision: HEAD
-      path: helm
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 0.0.0
+      chart: event-streaming-config
   destination:
     server: "{{ .Values.spec.destination.server }}"
     namespace: event-streaming
