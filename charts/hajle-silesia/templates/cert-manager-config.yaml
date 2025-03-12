@@ -8,14 +8,9 @@ metadata:
 spec:
   project: default
   sources:
-    - chart: cert-manager
-      repoURL: https://charts.jetstack.io
-      targetRevision: v1.13.1
-      helm:
-        releaseName: cert-manager
-        parameters:
-          - name: installCRDs
-            value: "true"
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 0.0.0
+      chart: cert-manager
   destination:
     server: "{{ .Values.spec.destination.server }}"
     namespace: cert-manager
