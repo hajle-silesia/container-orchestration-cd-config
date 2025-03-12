@@ -10,9 +10,9 @@ spec:
   sources:
     - repoURL: registry-1.docker.io/hajlesilesia
       targetRevision: 0.0.0
-      chart: cert-manager
+      chart: cert-manager-config
   destination:
-    server: "{{ .Values.spec.destination.server }}"
+    server: '{{ .Values.spec.destination.server }}'
     namespace: cert-manager
   syncPolicy:
     syncOptions:
