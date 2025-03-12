@@ -1,23 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kafka-ui
+  name: event-streaming-ui
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/hajle-silesia/event-streaming-ui-config.git
-      targetRevision: HEAD
-      ref: values
-    - chart: kafka-ui
-      repoURL: https://provectus.github.io/kafka-ui-charts
-      targetRevision: 0.7.6
-      helm:
-        releaseName: kafka-ui
-        valueFiles:
-          - $values/helm/values.yaml
+    - repoURL: registry-1.docker.io/hajlesilesia
+      targetRevision: 0.0.0
+      chart: event-streaming-ui-config
   destination:
     server: "{{ .Values.spec.destination.server }}"
     namespace: event-streaming
