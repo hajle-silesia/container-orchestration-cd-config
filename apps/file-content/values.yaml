@@ -1,0 +1,19 @@
+mongodb:
+  image:
+    repository: mongo
+    tag: 8.0.5
+  persistence:
+    mountPath: /data/db
+    size: 1Gi
+  service:
+    ports:
+      mongodb: 80
+  extraEnvVars:
+    # ARM architecture is not supported by Bitnami MongoDB image yet. Therefore, it's necessary to re-map Bitnami env vars into the env vars supported by the official MongoDB image.
+    - name: MONGO_INITDB_ROOT_USERNAME
+      value: $(MONGODB_ROOT_USER)
+    - name: MONGO_INITDB_ROOT_PASSWORD
+      value: $(MONGODB_ROOT_PASSWORD)
+  commonAnnotations:
+    reflector.v1.k8s.emberstack.com/reflection-allowed: "true"
+    reflector.v1.k8s.emberstack.com/reflection-allowed-namespaces: "file-content-ui,file-content-query"
